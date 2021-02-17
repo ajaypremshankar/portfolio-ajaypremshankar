@@ -4,7 +4,7 @@ module.exports = {
   author: 'Ajay Prem Shankar',
   url: 'https://portfolio.smakosh.com',
   legalName: 'Ajay Prem Shankar',
-  defaultDescription: 'I’m John and I’m a Backend & Devops engineer!',
+  defaultDescription: 'I’m Ajay and I’m a Backend & Devops engineer!',
   socialLinks: {
     twitter: 'http://www.twitter.com/smakosh',
     github: 'https://github.com/smakosh',
