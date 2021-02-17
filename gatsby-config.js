@@ -16,6 +16,13 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
+      resolve: `gatsby-source-instagram`,
+      options: {
+        //https://www.instagram.com/aj.prem/?__a=1
+        username: `1192172351`,
+      },
+    },
+    {
       resolve: 'gatsby-source-graphql',
       options: {
         typeName: 'GitHub',

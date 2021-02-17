@@ -15,13 +15,13 @@ export const Intro = () => {
       <IntroWrapper as={Container}>
         <Details theme={theme}>
           <h1>Hi There!</h1>
-          <h4>I’m Ajay and welcome to my virtual abode.</h4>
+          <h4>I’m Ajay and welcome to my virtual home.</h4>
           <Button as={AnchorLink} href="#contact">
             Contact Me
           </Button>
         </Details>
         <Thumbnail>
-          <img src={dev} alt="I’m Ajay and welcome to my virtual abode." />
+          <img src={dev} alt="I’m Ajay and welcome to my virtual home." />
         </Thumbnail>
       </IntroWrapper>
     </Wrapper>
