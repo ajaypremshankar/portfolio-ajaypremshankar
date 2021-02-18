@@ -11,7 +11,7 @@ export const Instagram = () => {
   
   return (
     <Wrapper as={Container} id="instagram">
-      <h2>Instagram</h2>
+      <h2>With Camera</h2>
     <div className="instagram-grid">
       {nodes.map((post) => {
         const title = post.caption ? post.caption.split(`#`)[0] : ``

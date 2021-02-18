@@ -11,9 +11,9 @@ const NavbarLinks = ({ desktop }) => {
     <Wrapper desktop={desktop} theme={theme}>
       <AnchorLink href="#about">About</AnchorLink>
       <AnchorLink href="#projects">Projects</AnchorLink>
-      <AnchorLink href="#blogs">Blogs</AnchorLink>
-      <AnchorLink href="#resume">Resume</AnchorLink>
-      <AnchorLink href="#instagram">Shots</AnchorLink>
+      {/*<AnchorLink href="#blogs">Blogs</AnchorLink>*/}
+      <AnchorLink href="#instagram">Captures</AnchorLink>
+      <a href='https://drive.google.com/file/d/1ovb9NHzeRZDIxaTT_vyj0M2_Vk6YPc6l/view?usp=sharing' target='_blank'>Resume</a>
       <AnchorLink href="#contact">Contact</AnchorLink>
       <ToggleTheme />
     </Wrapper>
