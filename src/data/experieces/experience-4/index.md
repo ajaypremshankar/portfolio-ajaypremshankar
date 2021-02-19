@@ -1,9 +1,17 @@
 ---
 category: 'experiences'
-company: 'Netlify'
-position: 'Senior Frontend Developer'
-startDate: 'Jun 2015'
-endDate: 'Jan 2018'
+company: 'Target Corporation'
+position: 'Senior Software Developer'
+startDate: 'Oct 2017'
+endDate: 'Apr 2020'
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Worked as part of Work Load Manager (WLM) team, which lets a store
+identify how much quantity/inventory is needed on the sales-floor.
+* Designed and built business module to help team member do grocery audit
+that saves $300,000/annum for Target.
+* Identified multiple bottlenecks and SPoF in the product and re-imagined
+WLM.
+* Some technologies that I work on are SpringBoot, Docker, Kibana, Kafka,
+etc.
+* Conducted multiple tech sessions at Org level as well as at Team level

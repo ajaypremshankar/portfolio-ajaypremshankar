@@ -1,9 +1,13 @@
 ---
 category: 'experiences'
-company: 'Facebook'
-position: 'Frontend Developer'
-startDate: 'May 2013'
-endDate: 'Jun 2015'
+company: 'Orange'
+position: 'Software Enginner'
+startDate: 'Feb 2017'
+endDate: 'Oct 2017'
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+* Role at Orange involved understanding a lot of business to solve problems with
+technology.
+* I did code reviews at scale.
+* Apart from coding my day to day involved bringing lot of engineering
+practices and helping people learn these practices effectively. 

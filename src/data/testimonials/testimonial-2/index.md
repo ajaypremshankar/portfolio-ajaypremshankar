@@ -1,7 +1,7 @@
 ---
 category: 'testimonials'
 cover: './testimonial-2.jpg'
-title: 'Daisy Buchanan'
+title: 'NC Patro'
 ---
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Ajay is very dedicated towards learning and applying new technologies and patterns. He believes in making the code and product better everyday. Strong advocator of constant feedback system be it team or product. An honest contributor to the team's success.

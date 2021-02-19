@@ -1,11 +1,11 @@
 ---
 category: 'experiences'
-company: 'Aizoon Reply'
-position: 'UI/UX Designer'
-startDate: 'Jan 2011'
-endDate: 'May 2013'
+company: 'Intel Security'
+position: 'Software Development Engineer'
+startDate: 'Nov 2015'
+endDate: 'Feb 2017'
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+* Java and J2EE development with custom Spring framework and ORMs.
+* JavaScript and Angular JS SPA development.
+* Conducted technical sessions @ team level.
