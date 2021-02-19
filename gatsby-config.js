@@ -1,83 +1,64 @@
-const config = require('./src/data/config');
-
-require('dotenv').config({
-  path: `.env.${process.env.NODE_ENV}`,
-});
-
 module.exports = {
   siteMetadata: {
-    title: config.defaultTitle,
-    description: config.defaultDescription,
-    author: config.author,
+    title: `Gatsby.JS`,
+    description: `Gatsby Markdown Personal Website Starter, using Styled Components, Tailwindcss and Framer Motion.`,
+    author: `Saimir Kapaj`
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-styled-components',
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
+    `gatsby-plugin-typescript`,
+    `gatsby-plugin-react-helmet`,
     {
-      resolve: `gatsby-source-instagram`,
+      resolve: `gatsby-source-filesystem`,
       options: {
-        //https://www.instagram.com/aj.prem/?__a=1
-        username: `1192172351`,
-      },
+        name: `images`,
+        path: `${__dirname}/src/assets/images`
+      }
     },
     {
-      resolve: 'gatsby-source-graphql',
+      resolve: `gatsby-source-filesystem`,
       options: {
-        typeName: 'GitHub',
-        fieldName: 'github',
-        url: 'https://api.github.com/graphql',
-        headers: {
-          Authorization: `Bearer ${process.env.GATSBY_PORTFOLIO_GITHUB_TOKEN}`,
-        },
-        fetchOptions: {},
-      },
+        name: `content`,
+        path: `${__dirname}/src/data`
+      }
     },
     {
-      resolve: 'gatsby-plugin-nprogress',
+      resolve: 'gatsby-transformer-remark',
       options: {
-        color: config.themeColor,
-        showSpinner: false,
-      },
+        plugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 768,
+              linkImagesToOriginal: false
+            }
+          }
+        ]
+      }
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
-      resolve: 'gatsby-plugin-google-analytics',
+      resolve: `gatsby-plugin-manifest`,
       options: {
-        trackingId: config.googleAnalyticsID,
-        head: true,
-      },
+        name: `gatsby-personal-website-starter`,
+        short_name: `starter`,
+        start_url: `/`,
+        background_color: `#ed64a6`,
+        theme_color: `#ed64a6`,
+        display: `minimal-ui`,
+        icon: `src/assets/images/gatsby-icon.png`
+      }
     },
+    `gatsby-plugin-offline`,
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-postcss`,
+    `gatsby-plugin-tailwindcss`,
     {
-      resolve: 'gatsby-plugin-favicon',
+      resolve: `gatsby-plugin-purgecss`,
       options: {
-        logo: './static/favicon/favicon-512.png',
-        injectHTML: true,
-        icons: {
-          android: true,
-          appleIcon: true,
-          appleStartup: true,
-          coast: false,
-          favicons: true,
-          firefox: true,
-          twitter: false,
-          yandex: false,
-          windows: false,
-        },
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-manifest',
-      options: {
-        name: config.defaultTitle,
-        short_name: 'starter',
-        start_url: '/',
-        background_color: config.backgroundColor,
-        theme_color: config.themeColor,
-        display: 'minimal-ui',
-        icon: './static/favicon/favicon-512.png',
-      },
-    },
-    'gatsby-plugin-offline',
-  ],
+        tailwind: true,
+        purgeOnly: [`src/assets/styles/global.css`]
+      }
+    }
+  ]
 };
