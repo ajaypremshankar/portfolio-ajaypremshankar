@@ -8,6 +8,12 @@ const Footer = () => (
   <Styled.Footer>
     <Container>
       <Styled.Links>
+      <Styled.Link href="https://www.linkedin.com/in/ajaypremshankar/" rel="noreferrer noopener" target="_blank">
+          LinkedIn
+        </Styled.Link>
+        <Styled.Link href="https://ajaypremshankar.medium.com/" rel="noreferrer noopener" target="_blank">
+          Medium
+        </Styled.Link>
         <Styled.Link href="https://github.com/ajaypremshankar" rel="noreferrer noopener" target="_blank">
           GitHub
         </Styled.Link>
@@ -17,9 +23,6 @@ const Footer = () => (
           target="_blank"
         >
           Twitter
-        </Styled.Link>
-        <Styled.Link href="https://www.linkedin.com/in/ajaypremshankar/" rel="noreferrer noopener" target="_blank">
-          LinkedIn
         </Styled.Link>
       </Styled.Links>
     </Container>

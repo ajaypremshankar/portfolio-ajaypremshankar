@@ -1,85 +1,46 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import styled from 'styled-components';
 import Img from 'gatsby-image';
 import Link from 'gatsby-link';
 import { motion } from 'framer-motion';
-
+import useMedium from 'hooks/useMedium'
 import Container from 'components/ui/Container';
 import TitleSection from 'components/ui/TitleSection';
 
 import * as Styled from './styles';
 
 const Posts = () => {
-  const { markdownRemark, allMarkdownRemark } = useStaticQuery(graphql`
-    query {
-      markdownRemark(frontmatter: { category: { eq: "blog section" } }) {
-        frontmatter {
-          title
-          subtitle
-        }
-      }
-      allMarkdownRemark(
-        filter: { frontmatter: { category: { eq: "blog" }, published: { eq: true } } }
-        sort: { fields: frontmatter___date, order: DESC }
-      ) {
-        edges {
-          node {
-            id
-            html
-            fields {
-              slug
-            }
-            frontmatter {
-              title
-              description
-              date(formatString: "MMM DD, YYYY")
-              tags
-              cover {
-                childImageSharp {
-                  fluid(maxWidth: 800) {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  `);
-
-  const sectionTitle = markdownRemark.frontmatter;
-  const posts = allMarkdownRemark.edges;
+  const posts = useMedium();
 
   return (
     <Container section>
-      <TitleSection title={sectionTitle.title} subtitle={sectionTitle.subtitle} center />
+      <TitleSection title={'Blog'} subtitle={' '} center />
       <Styled.Posts>
         {posts.map((item) => {
-          const {
-            id,
-            fields: { slug },
-            frontmatter: { title, cover, description, date, tags }
-          } = item.node;
+          const id = item.node.id;
+          const title =  item.node.title;
+          const text = item.node.virtuals.subtitle;
+          const cover = `https://cdn-images-1.medium.com/max/400/${item.node.virtuals.previewImage.imageId}`;
+          const url = `https://medium.com/@ajaypremshankar/${item.node.uniqueSlug}`;
+          const date = item.node.createdAt;
+          const time= item.node.virtuals.readingTime;
 
           return (
             <Styled.Post key={id}>
-              <Link to={slug}>
+              <Link to={url}  target={'_blank'}>
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 1 }}>
                   <Styled.Card>
-                    <Styled.Image>
-                      <Img fluid={cover.childImageSharp.fluid} alt={title} />
-                    </Styled.Image>
+                  {cover && <CoverImage src={cover} height="200px" alt={title} />}
                     <Styled.Content>
                       <Styled.Date>{date}</Styled.Date>
                       <Styled.Title>{title}</Styled.Title>
-                      <Styled.Description>{description}</Styled.Description>
+                      <Styled.Description>{text}</Styled.Description>
                     </Styled.Content>
-                    <Styled.Tags>
+                    {/*<Styled.Tags>
                       {tags.map((item) => (
                         <Styled.Tag key={item}>{item}</Styled.Tag>
                       ))}
-                    </Styled.Tags>
+                      </Styled.Tags>*/}
                   </Styled.Card>
                 </motion.div>
               </Link>
@@ -92,3 +53,8 @@ const Posts = () => {
 };
 
 export default Posts;
+
+const CoverImage = styled.img`
+  width: 100%;
+  object-fit: cover;
+`;

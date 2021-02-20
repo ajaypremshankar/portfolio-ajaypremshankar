@@ -1,9 +1,8 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import Link from 'gatsby-link';
 import { motion } from 'framer-motion';
-
+import TitleSection from 'components/ui/TitleSection';
 import Container from 'components/ui/Container';
 
 import * as Styled from './styles';
@@ -14,7 +13,7 @@ const Captures = () => {
 
   return (
     <Container section>
-      {/*<TitleSection title={sectionTitle.title} subtitle={sectionTitle.subtitle} center />*/}
+      <TitleSection title={'Captures'} subtitle={' '} center />
       <Styled.Posts>
         {nodes.map((post) => {
 

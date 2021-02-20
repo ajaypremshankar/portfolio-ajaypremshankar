@@ -4,23 +4,23 @@ import * as Styled from './styles';
 
 const mainNavItems = [
   {
-    title: 'About Me',
+    title: 'Home',
     slug: '/'
   },
   {
     title: 'Resume',
     slug: '/resume/'
   },
-  /*{
+  {
     title: 'Blog',
     slug: '/blog/'
-  },*/
+  },
   {
     title: 'Captures',
     slug: '/captures/'
   },
   {
-    title: 'Contact Me',
+    title: 'Contact',
     slug: '/contact/'
   }
 ];
