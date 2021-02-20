@@ -2,6 +2,6 @@
 category: 'services'
 title: 'Photography'
 icon: 'camera-retro'
-description: 'Mauris neque libero, aliquet vel mollis nec, euismod sed tellus. Mauris convallis dictum elit id volutpat.'
+description: 'Be it on phone or camera, photography gives me instant peace. I see world better diffently from a lense.'
 link: /captures/
 ---
