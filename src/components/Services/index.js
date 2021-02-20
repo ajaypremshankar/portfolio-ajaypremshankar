@@ -1,9 +1,10 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-
+import Link from 'gatsby-link';
 import InfoBlock from 'components/ui/InfoBlock';
 import Container from 'components/ui/Container';
 import TitleSection from 'components/ui/TitleSection';
+import { motion } from 'framer-motion';
 
 import * as Styled from './styles';
 
@@ -24,6 +25,7 @@ const Services = () => {
               title
               icon
               description
+              link
             }
           }
         }
@@ -41,13 +43,18 @@ const Services = () => {
         {services.map((item) => {
           const {
             id,
-            frontmatter: { title, icon, description }
+            frontmatter: { title, icon, description, link }
           } = item.node;
 
           return (
-            <Styled.ServiceItem key={id}>
-              <InfoBlock icon={icon} title={title} content={description} />
-            </Styled.ServiceItem>
+            
+              <Styled.ServiceItem key={id}>
+                <Link to={link}>
+                <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 1 }}>
+                <InfoBlock icon={icon} title={title} content={description} />
+                </motion.div>
+                </Link>
+              </Styled.ServiceItem>
           );
         })}
       </Styled.Services>
