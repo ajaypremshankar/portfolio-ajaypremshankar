@@ -7,9 +7,9 @@ const Timeline = ({ title, subtitle, content, startDate, endDate }) => (
   <Styled.Timeline>
     <Styled.Point />
     <Styled.Details>
-      <Styled.Date>
+      { startDate && endDate &&<Styled.Date>
         {startDate} - {endDate}
-      </Styled.Date>
+      </Styled.Date> }
       <Styled.Title>{title}</Styled.Title>
       <Styled.Subtitle>{subtitle}</Styled.Subtitle>
     </Styled.Details>

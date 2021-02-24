@@ -14,7 +14,8 @@ const Posts = () => {
 
   return (
     <Container section>
-      <TitleSection title={'Blog'} subtitle={' '} center />
+      <div id="blog"></div>
+      <TitleSection title={'Writeups'} subtitle={'My Blogs'} center />
       <Styled.Posts>
         {posts.map((item) => {
           const id = item.node.id;

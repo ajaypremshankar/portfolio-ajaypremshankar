@@ -55,7 +55,7 @@ const Projects = () => {
 
   return (
     <Container section>
-      <TitleSection title={sectionTitle.title} subtitle={sectionTitle.subtitle} center />
+      <TitleSection title={sectionTitle.title} subtitle={sectionTitle.subtitle} />
       <Styled.Posts>
         {posts.map((item) => {
           const {
@@ -65,8 +65,10 @@ const Projects = () => {
 
           return (
             <Styled.Post key={id}>
+              <Link to={repo ? repo : '#'} target='_blank'>
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 1 }}>
                 <Styled.Card>
+                  
                   <Styled.Image>
                     { cover?.childImageSharp?.fluid && 
                       <Img fluid={cover.childImageSharp.fluid} alt={title} />}
@@ -75,12 +77,10 @@ const Projects = () => {
                     <Styled.Date>{year}</Styled.Date>
                     <Styled.Title>{title}</Styled.Title>
                     <Styled.Description>{description}</Styled.Description>
-                    <hr />
-                    {repo && <Link to={repo} target='_blank'>Github</Link>} <br />
-                    {link && <Link to={link} target='_blank'>Link</Link>}
                   </Styled.Content>
                 </Styled.Card>
               </motion.div>
+              </Link>
             </Styled.Post>
           );
         })}

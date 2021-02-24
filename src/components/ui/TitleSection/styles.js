@@ -5,13 +5,13 @@ export const TitleSection = styled.div`
   ${tw`flex flex-col w-full`};
 `;
 
-export const Title = styled.h2`
-  ${tw`uppercase mb-4 text-lg font-bold w-full text-left`};
+export const SubTitle = styled.h2`
+  ${tw`uppercase text-lg font-bold w-full text-left`};
   ${({ center }) => center && tw`text-center`};
 `;
 
-export const SubTitle = styled.h4`
-  ${tw`text-xs text-pink-500 w-full text-left`};
+export const Title = styled.h4`
+  ${tw`text-xs mb-4 text-pink-500 w-full text-left`};
   ${({ center }) => center && tw`text-center`};
 `;
 

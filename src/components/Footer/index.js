@@ -24,7 +24,26 @@ const Footer = () => (
         >
           Twitter
         </Styled.Link>
+        
       </Styled.Links>
+      <br /><br />
+      <Styled.LightLinks>
+      Credits:
+      <Styled.LightLink
+        href="https://www.gatsbyjs.com"
+        rel="noreferrer noopener"
+        target="_blank"
+        >
+          Gatsby
+        </Styled.LightLink> & 
+        <Styled.LightLink
+        href="https://github.com/SaimirKapaj"
+        rel="noreferrer noopener"
+        target="_blank"
+        >
+          Saimir Kapaj
+        </Styled.LightLink>
+      </Styled.LightLinks>
     </Container>
   </Styled.Footer>
 );

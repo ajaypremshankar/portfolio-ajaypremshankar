@@ -20,6 +20,10 @@ const mainNavItems = [
     slug: '/captures/'
   },
   {
+    title: 'Read',
+    slug: '/read/'
+  },
+  {
     title: 'Contact',
     slug: '/contact/'
   }
