@@ -9,7 +9,7 @@ const BlogPage: React.FC = () => {
   return (
     <Layout>
       <SEO title="Blog" />
-      <Posts/>
+      <Read />
     </Layout>
   );
 };

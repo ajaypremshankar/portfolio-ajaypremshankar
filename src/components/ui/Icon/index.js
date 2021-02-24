@@ -6,6 +6,7 @@ import {
   faLaptopCode,
   faCameraRetro,
   faPeopleArrows,
+  faBookReader,
   faDrawPolygon,
   faEdit,
   faBullhorn,
@@ -16,7 +17,7 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 /* add any additional icon to the library */
-library.add(fab, faLaptopCode, faCameraRetro, faPeopleArrows, faDrawPolygon, faEdit, faEdit, faBullhorn, faMapMarkerAlt, faPhone, faPaperPlane);
+library.add(fab, faLaptopCode, faCameraRetro, faPeopleArrows, faBookReader, faDrawPolygon, faEdit, faEdit, faBullhorn, faMapMarkerAlt, faPhone, faPaperPlane);
 
 const Icon = ({ ...props }) => <FontAwesomeIcon {...props} />;
 

@@ -12,11 +12,11 @@ const ResumePage: React.FC = () => (
     <SEO title="Resume" />
     <Projects />
     <hr />
+    <Skills />
+    <hr />
     <Experience />
     <hr />
     <Education />
-    <hr />
-    {/*<Skills />*/}
   </Layout>
 );
 
