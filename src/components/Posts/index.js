@@ -4,7 +4,7 @@ import Link from 'gatsby-link';
 import { motion } from 'framer-motion';
 import Container from 'components/ui/Container';
 import TitleSection from 'components/ui/TitleSection';
-
+import fetch from 'node-fetch'
 import * as Styled from './styles';
 
 const Posts = () => {
