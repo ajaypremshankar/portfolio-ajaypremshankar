@@ -30,14 +30,7 @@ const Captures = () => {
                     </Styled.Image>
                     <Styled.Content>
                       <Styled.Date>{date}</Styled.Date>
-                      {/*<Styled.Title>{title}</Styled.Title>
-                      <Styled.Description>{description}</Styled.Description>*/}
                     </Styled.Content>
-                    {/*<Styled.Tags>
-                      {tags.map((item) => (
-                        <Styled.Tag key={item}>{item}</Styled.Tag>
-                      ))}
-                      </Styled.Tags>*/}
                   </Styled.Card>
                 </motion.div>
               </Link>

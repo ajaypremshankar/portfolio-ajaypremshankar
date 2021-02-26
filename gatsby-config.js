@@ -29,12 +29,6 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-source-medium',
-      options: {
-        username: '@ajaypremshankar',
-      },
-    },
-    {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [

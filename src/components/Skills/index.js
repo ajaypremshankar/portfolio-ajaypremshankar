@@ -1,6 +1,4 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
-
 import Container from 'components/ui/Container';
 import TitleSection from 'components/ui/TitleSection';
 
@@ -9,34 +7,9 @@ import Timeline from 'components/ui/Timeline';
 import FormatHtml from 'components/utils/FormatHtml';
 
 const Skills = () => {
-  const { markdownRemark, allMarkdownRemark } = useStaticQuery(graphql`
-    query {
-      markdownRemark(frontmatter: { category: { eq: "skills section" } }) {
-        frontmatter {
-          title
-          subtitle
-        }
-      }
-      allMarkdownRemark(filter: { frontmatter: { category: { eq: "skills" } } }, sort: { fields: fileAbsolutePath }) {
-        edges {
-          node {
-            id
-            frontmatter {
-              title
-              percentage
-            }
-          }
-        }
-      }
-    }
-  `);
-
-  const sectionTitle = markdownRemark.frontmatter;
-  const skills = allMarkdownRemark.edges;
-
   return (
     <Container section>
-      <TitleSection title={sectionTitle.title} subtitle={sectionTitle.subtitle} />
+      <TitleSection title={'Skills'} subtitle={'Technologies, Tools & Offerings'} />
       <Styled.Skills>
 
         <Timeline

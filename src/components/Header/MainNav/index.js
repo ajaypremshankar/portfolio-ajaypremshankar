@@ -22,11 +22,7 @@ const mainNavItems = [
   {
     title: 'Captures',
     slug: '/captures/'
-  },
-  /*{
-    title: 'Contact',
-    slug: '/contact/'
-  }*/
+  }
 ];
 
 const MainNav = () => {

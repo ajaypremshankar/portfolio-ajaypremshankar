@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import Img from 'gatsby-image';
 import Link from 'gatsby-link';
 import { motion } from 'framer-motion';
-import useMedium from 'hooks/useMedium'
 import Container from 'components/ui/Container';
 import TitleSection from 'components/ui/TitleSection';
 
