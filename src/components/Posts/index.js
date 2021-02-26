@@ -1,47 +1,45 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
-import Img from 'gatsby-image';
 import Link from 'gatsby-link';
 import { motion } from 'framer-motion';
-import useMedium from 'hooks/useMedium'
 import Container from 'components/ui/Container';
 import TitleSection from 'components/ui/TitleSection';
-
+import fetch from 'node-fetch'
 import * as Styled from './styles';
 
 const Posts = () => {
-  const posts = useMedium();
+  const [state, setState] = useState([]);
+  const URL = 'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@ajaypremshankar';
+  fetch(URL)
+    .then(res => res.json())
+    .then((data) => {
+      const content = data.items; //This is an array with the content. No feed, no info about author etc..
+      const posts = content.filter(item => item.categories.length > 0);
+      setState(posts);
+    })
+
 
   return (
     <Container section>
       <div id="blog"></div>
       <TitleSection title={'Writeups'} subtitle={'My Blogs'} center />
       <Styled.Posts>
-        {posts.map((item) => {
-          const id = item.node.id;
-          const title =  item.node.title;
-          const text = item.node.virtuals.subtitle;
-          const cover = `https://cdn-images-1.medium.com/max/400/${item.node.virtuals.previewImage.imageId}`;
-          const url = `https://medium.com/@ajaypremshankar/${item.node.uniqueSlug}`;
-          const date = item.node.createdAt;
-          const time= item.node.virtuals.readingTime;
-
+        {state.map((item) => {
+          const id = item.guid
+          const title = item.title;
+          const cover = item.thumbnail;
+          const url = item.link;
+          const date = item.pubDate;
           return (
             <Styled.Post key={id}>
-              <Link to={url}  target={'_blank'}>
+              <Link to={url} target={'_blank'}>
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 1 }}>
                   <Styled.Card>
-                  {cover && <CoverImage src={cover} height="200px" alt={title} />}
+                    {cover && <CoverImage src={cover} height="200px" alt={title} />}
                     <Styled.Content>
                       <Styled.Date>{date}</Styled.Date>
                       <Styled.Title>{title}</Styled.Title>
-                      <Styled.Description>{text}</Styled.Description>
                     </Styled.Content>
-                    {/*<Styled.Tags>
-                      {tags.map((item) => (
-                        <Styled.Tag key={item}>{item}</Styled.Tag>
-                      ))}
-                      </Styled.Tags>*/}
                   </Styled.Card>
                 </motion.div>
               </Link>

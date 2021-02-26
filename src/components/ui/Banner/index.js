@@ -5,6 +5,7 @@ import { Link } from 'gatsby';
 import Container from 'components/ui/Container';
 import Button from 'components/ui/Button';
 import TitleSection from 'components/ui/TitleSection';
+import SocialMediaButtons from 'react-social-media-buttons';
 
 import * as Styled from './styles';
 
@@ -13,9 +14,14 @@ const Banner = ({ title, subtitle, content, linkTo, linkText }) => (
     <Container section>
       <TitleSection title={title} subtitle={subtitle} />
       <Styled.Content>{content}</Styled.Content>
-      <Link to={linkTo}>
-        <Button primary>{linkText}</Button>
-      </Link>
+      <SocialMediaButtons
+        links={[
+          'https://www.linkedin.com/in/ajaypremshankar/',
+          'https://github.com/ajaypremshankar',
+          'https://www.instagram.com/aj.prem/']}
+        buttonStyle={{ margin: '0px 10px', backgroundColor: '#ffffff', borderRadius: '50%', border: '1px groove #3c366b' }}
+        iconStyle={{ color: '#ed64a6' }}
+        openNewTab={true} />
     </Container>
   </Styled.Banner>
 );

@@ -16,17 +16,17 @@ const mainNavItems = [
     slug: '/blog/'
   },
   {
-    title: 'Captures',
-    slug: '/captures/'
-  },
-  {
     title: 'Read',
     slug: '/read/'
   },
   {
+    title: 'Captures',
+    slug: '/captures/'
+  },
+  /*{
     title: 'Contact',
     slug: '/contact/'
-  }
+  }*/
 ];
 
 const MainNav = () => {
