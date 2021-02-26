@@ -14,7 +14,7 @@ const Read = () => {
   return (
     <Container section>
       <div id="read"></div>
-      <TitleSection title={'Read'} subtitle={'Things I read'} center />
+      <TitleSection title={'Blog'} subtitle={' '} center />
       <Styled.Posts>
         Coming soon.
       </Styled.Posts>

@@ -18,13 +18,12 @@ const Footer = () => (
           GitHub
         </Styled.Link>
         <Styled.Link
-          href="https://twitter.com/apremshankar"
+          href="https://www.instagram.com/aj.prem/"
           rel="noreferrer noopener"
           target="_blank"
         >
-          Twitter
+          Instagram
         </Styled.Link>
-        
       </Styled.Links>
       <br /><br />
       <Styled.LightLinks>

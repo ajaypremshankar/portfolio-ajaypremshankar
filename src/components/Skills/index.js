@@ -48,7 +48,7 @@ const Skills = () => {
 - Ability to take and work on the feedback.<br />
 - Attention to details while analyzing requirements.<br />
 - Calling out blockers and gaps in time to right channels.<br />
-- Ability to mentor and influence people around.<br /><br /><hr />
+- Ability to mentor and influence people around.<br /><br />
 `} />}
           startDate={undefined}
           endDate={undefined}

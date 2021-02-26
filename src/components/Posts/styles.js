@@ -32,9 +32,9 @@ export const Date = styled.h3`
 `;
 
 export const Tags = styled.div`
-  ${tw`p-4 pt-2 mt-auto`}
+  ${tw`p-4 pt-2 mt-auto break-normal m-0.5 `}
 `;
 
 export const Tag = styled.span`
-  ${tw`text-xs text-indigo-900 border border-pink-500 rounded-full px-2 py-1 mr-2`}
+  ${tw`text-xs break-normal	text-indigo-900 border m-0.5 border-pink-500 rounded-full px-2 py-1 mr-2`}
 `;
