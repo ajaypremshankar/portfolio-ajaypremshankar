@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Ajay Prem Shankar`,
     description: `Portfolio - Ajay Prem Shankar`,
-    author: `starter written by Saimir Kapaj`
+    author: `Starter written by Saimir Kapaj`
   },
   plugins: [
     `gatsby-plugin-typescript`,

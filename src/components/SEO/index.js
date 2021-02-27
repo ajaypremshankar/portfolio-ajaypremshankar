@@ -18,8 +18,17 @@ const SEO = ({ description, lang, meta, title }) => {
     `
   );
 
-  const metaDescription = description || site.siteMetadata.description;
+  const metaDescription = description ? title +' - ' + description : site.siteMetadata.description;
 
+  const metaTags=['Ajay', 'Ajay Prem Shankar', 
+  'ajaypremshankar', 'apremshankar', 
+  'personal leadership', 'leadership',
+  'coding', 'java', 'microservices',
+  'reader', 'self development',
+  'portrait', 'photography',
+  'ajaypremshankar.medium',
+  'organizeyou', 'todo', 
+  'mentor', 'mentoring', 'mentorship', 'mentee', 'mentorship']
   return (
     <Helmet
       htmlAttributes={{
@@ -50,7 +59,7 @@ const SEO = ({ description, lang, meta, title }) => {
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata.author
+          content: `ajaypremshankar`
         },
         {
           name: `twitter:title`,
@@ -60,7 +69,9 @@ const SEO = ({ description, lang, meta, title }) => {
           name: `twitter:description`,
           content: metaDescription
         }
-      ].concat(meta)}
+      ].concat(meta)
+      .concat(metaTags)
+    }
     />
   );
 };
