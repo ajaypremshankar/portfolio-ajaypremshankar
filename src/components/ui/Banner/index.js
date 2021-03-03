@@ -26,7 +26,7 @@ Apart from engineering, my passion is to help students and early stage professio
             <li>Help you see what you can become next.</li>
           </ul></Styled.ListContent>
       </Styled.Content>
-      <Link to='https://calendly.com/ajaypremshankar/connect-with-ajay-prem-shankar' target='_blank'>
+      <Link to='/calendly'>
         <Button>Book my calendar</Button>
         </Link>
 
