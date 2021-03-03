@@ -3,17 +3,33 @@ import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 
 import Container from 'components/ui/Container';
-import Button from 'components/ui/Button';
 import TitleSection from 'components/ui/TitleSection';
 import SocialMediaButtons from 'react-social-media-buttons';
 
 import * as Styled from './styles';
+import Button from '../Button';
 
 const Banner = ({ title, subtitle, content, linkTo, linkText }) => (
   <Styled.Banner>
     <Container section>
       <TitleSection title={title} subtitle={subtitle} />
-      <Styled.Content>{content}</Styled.Content>
+      <Styled.Content>
+        Hello Visitor,<br />
+    I'm passionate engineering professional with strong developer ethics. <br />
+Apart from engineering, my passion is to help students and early stage professionals grow in their career. My expertise lies in:<br /><br />
+        <Styled.ListContent>
+          <ul style={{ listStyleType: "square" }}>
+            <li>Helping you identify your potential at work</li>
+            <li>Brainstorming your career growth and trajectory</li>
+            <li>Help you plan consistent growth without creating imbalance.</li>
+            <li>Prepare and and help navigate you in day-to-day work.</li>
+            <li>Help you see what you can become next.</li>
+          </ul></Styled.ListContent>
+      </Styled.Content>
+      <Link to='https://calendly.com/ajaypremshankar/connect-with-ajay-prem-shankar' target='_blank'>
+        <Button>Book my calendar</Button>
+        </Link>
+
       <SocialMediaButtons
         links={[
           'https://www.linkedin.com/in/ajaypremshankar/',
@@ -22,6 +38,7 @@ const Banner = ({ title, subtitle, content, linkTo, linkText }) => (
         buttonStyle={{ margin: '0px 10px', backgroundColor: '#ffffff', borderRadius: '50%', border: '1px groove #3c366b' }}
         iconStyle={{ color: '#ed64a6' }}
         openNewTab={true} />
+
     </Container>
   </Styled.Banner>
 );

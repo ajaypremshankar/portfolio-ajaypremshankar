@@ -1,7 +1,7 @@
 ---
 category: 'services'
-title: 'Photography'
-icon: 'camera-retro'
-description: 'Be it on phone or camera, photography gives me instant peace. I see the world diffently from a lens.'
-link: /captures/
+title: 'Blog'
+icon: 'edit'
+description: 'Sharing what I know is something that keeps me going. What can be better than sharing by writing!'
+link: '/blog'
 ---

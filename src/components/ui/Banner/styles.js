@@ -8,3 +8,7 @@ export const Banner = styled.section`
 export const Content = styled.p`
   ${tw`mb-8`};
 `;
+
+export const ListContent = styled.p`
+  ${tw`ml-12`};
+`;

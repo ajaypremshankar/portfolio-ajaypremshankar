@@ -15,10 +15,10 @@ const mainNavItems = [
     title: 'Blog',
     slug: '/blog/'
   },
-  {
+  /*{
     title: 'Read',
     slug: '/read/'
-  },
+  },*/
   {
     title: 'Captures',
     slug: '/captures/'

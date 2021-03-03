@@ -1,7 +1,7 @@
 ---
 category: 'services'
-title: 'Reading'
-icon: 'book-reader'
-description: 'This is something that I do religiously and regularly. Some genres that I love reading are self development and leadership.'
-link: '/read'
+title: 'Photography'
+icon: 'camera-retro'
+description: 'Be it on phone or camera, photography gives me instant peace. I see the world diffently from a lens.'
+link: /captures/
 ---
