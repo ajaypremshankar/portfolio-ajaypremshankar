@@ -1,7 +1,7 @@
 ---
 category: 'services'
-title: 'Photography'
-icon: 'camera-retro'
-description: 'Be it on phone or camera, photography gives me instant peace. I see the world diffently from a lens.'
-link: /captures/
+title: 'Help you grow'
+icon: 'people-arrows'
+description: 'One of things gives me immense happiness is watching people grow and and to be part their journey.'
+link: '/growth'
 ---

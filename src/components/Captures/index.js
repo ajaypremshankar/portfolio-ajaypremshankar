@@ -22,7 +22,7 @@ const Captures = () => {
         
         return (
             <Styled.Post key={post.id}>
-              <Link to={`https://www.instagram.com/p/${post.id}/`}>
+              <Link to={`https://www.instagram.com/p/${post.id}/`} target='_blank'>
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 1 }}>
                   <Styled.Card>
                     <Styled.Image>

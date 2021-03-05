@@ -27,7 +27,8 @@ const SEO = ({ description, lang, meta, title }) => {
   'reader', 'self development',
   'portrait', 'photography',
   'ajaypremshankar.medium',
-  'organizeyou', 'todo', 
+  'organizeyou', 'todo',
+  'personal growth', 'professional growth', 'growth', 
   'mentor', 'mentoring', 'mentorship', 'mentee', 'mentorship']
   return (
     <Helmet

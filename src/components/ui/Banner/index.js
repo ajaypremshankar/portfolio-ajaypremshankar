@@ -16,15 +16,7 @@ const Banner = ({ title, subtitle, content, linkTo, linkText }) => (
       <Styled.Content>
         Hello Visitor,<br />
     I'm passionate engineering professional with strong developer ethics. <br />
-Apart from engineering, my passion is to help students and early stage professionals grow in their career. My expertise lies in:<br /><br />
-        <Styled.ListContent>
-          <ul style={{ listStyleType: "square" }}>
-            <li>Helping you identify your potential at work</li>
-            <li>Brainstorming your career growth and trajectory</li>
-            <li>Help you plan consistent growth without creating imbalance.</li>
-            <li>Prepare and and help navigate you in day-to-day work.</li>
-            <li>Help you see what you can become next.</li>
-          </ul></Styled.ListContent>
+Apart from engineering, my passion is to help students and early stage professionals grow in their career.
       </Styled.Content>
       <Link to='/calendly'>
         <Button>Book my calendar</Button>
