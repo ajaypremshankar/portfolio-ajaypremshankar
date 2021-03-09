@@ -6,6 +6,7 @@ import Experience from 'components/Experience';
 import Education from 'components/Education';
 import Skills from 'components/Skills';
 import Projects from 'components/Projects';
+import CloudPdfResume from 'components/CloudPdfResume';
 
 const ResumePage: React.FC = () => (
   <Layout>
@@ -31,11 +32,7 @@ const ResumePage: React.FC = () => (
     'app developers']} />
     <Projects />
     <hr />
-    <Skills />
-    <hr />
-    <Experience />
-    <hr />
-    <Education />
+    <CloudPdfResume />
   </Layout>
 );
 
