@@ -52,7 +52,7 @@ const GrowthEnabler = () => {
       <Styled.Content>
       <TitleSection title={sectionTitle.title} subtitle={sectionTitle.subtitle} />
 
-      As a growth enabler, I intent to help students and early stage professionals grow in their career. My expertise lies in:<br /><br />
+      As a growth enabler, I intend to help students and early-stage professionals grow in their career. My expertise lies in:<br /><br />
         <Styled.ListContent>
           <ul style={{ listStyleType: "square" }}>
             <li>Helping you identify your potential at work</li>

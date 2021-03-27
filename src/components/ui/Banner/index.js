@@ -15,8 +15,8 @@ const Banner = ({ title, subtitle, content, linkTo, linkText }) => (
       <TitleSection title={title} subtitle={subtitle} />
       <Styled.Content>
         Hello Visitor,<br />
-    I'm passionate engineering professional with strong developer ethics. <br />
-Apart from engineering, my passion is to help students and early stage professionals grow in their career.
+        I'm a passionate engineering professional with strong developer ethics. <br />
+Apart from engineering, my passion is to help students and early-stage professionals grow in their career.
       </Styled.Content>
       <Link to='/calendly'>
         <Button>Book my calendar</Button>
