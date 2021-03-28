@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import Img from 'gatsby-image';
-import Link from 'gatsby-link';
 import { motion } from 'framer-motion';
 import Container from 'components/ui/Container';
 import TitleSection from 'components/ui/TitleSection';
@@ -48,7 +47,7 @@ const Projects = () => {
       }
     }
   `);
-
+  
   const sectionTitle = markdownRemark.frontmatter;
   const posts = allMarkdownRemark.edges;
 
@@ -64,7 +63,7 @@ const Projects = () => {
 
           return (
             <Styled.Post key={id}>
-              <Link to={repo ? repo : '#'} target='_blank'>
+              <a href={repo ? repo : '#'} target='_blank'>
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 1 }}>
                 <Styled.Card>
                   
@@ -79,7 +78,7 @@ const Projects = () => {
                   </Styled.Content>
                 </Styled.Card>
               </motion.div>
-              </Link>
+              </a>
             </Styled.Post>
           );
         })}
