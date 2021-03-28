@@ -18,7 +18,7 @@ const Banner = ({ title, subtitle, content, linkTo, linkText }) => (
         I'm a passionate engineering professional with strong developer ethics. <br />
 Apart from engineering, my passion is to help students and early-stage professionals grow in their career.
       </Styled.Content>
-      <Link to='/calendly'>
+      <Link to='/calendly/'>
         <Button>Book my calendar</Button>
         </Link>
 

@@ -62,7 +62,7 @@ const GrowthEnabler = () => {
             <li>Help you see what you can become next.</li>
           </ul></Styled.ListContent>
           <br />
-          <Link to='/calendly'>
+          <Link to='/calendly/'>
         <Button>Book my calendar</Button>
         </Link>
         <br /><br /><br />
