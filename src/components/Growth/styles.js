@@ -18,7 +18,7 @@ export const GrowthTestimonialSection = styled.div`
 `;
 
 export const Image = styled.figure`
-  ${tw`w-16 h-16 mx-auto border border-pink-500 rounded-full`};
+  ${tw`w-16 h-16 mx-auto border border-blue-700 rounded-full`};
 
   img {
     ${tw`border-4 border-white rounded-full`};

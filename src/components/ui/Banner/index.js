@@ -28,7 +28,7 @@ Apart from engineering, my passion is to help students and early-stage professio
           'https://github.com/ajaypremshankar',
           'https://www.instagram.com/aj.prem/']}
         buttonStyle={{ margin: '0px 10px', backgroundColor: '#ffffff', borderRadius: '50%', border: '1px groove #3c366b' }}
-        iconStyle={{ color: '#ed64a6' }}
+        iconStyle={{ color: '#2B6CB0' }}
         openNewTab={true} />
 
     </Container>

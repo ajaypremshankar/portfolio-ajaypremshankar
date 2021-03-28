@@ -50,8 +50,8 @@ module.exports = {
         name: `ajaypremshankar-personal-website`,
         short_name: `portfolio`,
         start_url: `/`,
-        background_color: `#ed64a6`,
-        theme_color: `#ed64a6`,
+        background_color: `#2B6CB0`,
+        theme_color: `#2B6CB0`,
         display: `minimal-ui`,
         icon: `src/assets/images/gatsby-icon.png`
       }
