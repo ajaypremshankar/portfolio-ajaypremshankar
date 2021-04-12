@@ -1,5 +1,5 @@
 ---
 category: 'mentoring section'
-title: 'Grow Enabler'
+title: 'Growth Enabler'
 subtitle: 'Something I love dearly and do passionately'
 ---
