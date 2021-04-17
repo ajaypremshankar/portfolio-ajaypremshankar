@@ -42,7 +42,7 @@ const GrowthEnabler = () => {
     }
   `);
 
-    console.log(markdownRemark, allMarkdownRemark)
+  console.log(markdownRemark, allMarkdownRemark)
 
   const sectionTitle = markdownRemark.frontmatter;
   const testimonials = allMarkdownRemark.edges;
@@ -50,23 +50,36 @@ const GrowthEnabler = () => {
   return (
     <Container section>
       <Styled.Content>
-      <TitleSection title={sectionTitle.title} subtitle={sectionTitle.subtitle} />
+        <TitleSection title={sectionTitle.title} subtitle={sectionTitle.subtitle} />
 
-      As a growth enabler, I intend to help students and early-stage professionals grow in their career. My expertise lies in:<br /><br />
+      As a growth enabler, I intend to help students and early-stage professionals grow in their career.<br /><br />
+      If you find yourself asking any one of the following question(s):<br /><br />
         <Styled.ListContent>
           <ul style={{ listStyleType: "square" }}>
-            <li>Helping you identify your potential at work</li>
-            <li>Brainstorming your career growth and trajectory</li>
-            <li>Help you plan consistent growth without creating imbalance.</li>
-            <li>Prepare and help you navigate day-to-day at work.</li>
-            <li>Help you see what you can become next.</li>
+            <li>How to plan and prepare for coding interviews?</li>
+            <li>Should I do projects or competitive programming?</li>
+            <li>Why my resume doesn’t get shortlisted?</li>
+            <li>How do I grow in my career?</li>
+            <li>How do I build credibility at work?</li>
+            <li>How do I make my LinkedIn profile stand out?</li>
+            <li>How can I create visibility in the team?</li>
           </ul></Styled.ListContent>
-          <br />
-          <Link to='/calendly/'>
-        <Button>Book my calendar</Button>
+        <br />
+        <Link to='/calendly/'>
+          <Button>Book my calendar</Button>
         </Link>
-        <br /><br /><br />
-          <hr />
+        <br /><br />
+        I do NOT charge anything for these sessions. I truly want to help you while learning from your experience.<br />
+Now, if you're holding back because you think there is a hidden charge which I shall reveal later!
+        <br />
+        Please note. I expect only two things from you.
+        <Styled.ListContent>
+          <ul style={{ listStyleType: "square" }}>
+            <li>Please make sure you describe your question in detail.</li>
+            <li>After the session, share your experience in form of feedback so that I can help better.</li>
+          </ul>
+        </Styled.ListContent>
+        <br /><br /><br /><hr />
       </Styled.Content>
       <TitleSection title={'Testimonials'} subtitle={'What people are saying'} center />
       <Styled.GrowthTestimonialSections>
