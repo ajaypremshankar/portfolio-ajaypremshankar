@@ -1,3 +1,6 @@
+let env = process.env.NODE_ENV || 'development';
+require('dotenv').config({path: `./.env.${env}`}); 
+
 module.exports = {
   siteMetadata: {
     title: `Ajay Prem Shankar`,
@@ -22,11 +25,13 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-source-instagram`,
+      resolve: `gatsby-source-instagram-all`,
       options: {
         //https://www.instagram.com/aj.prem/?__a=1
-        username: `1192172351`,
+        access_token: process.env.LINKEDIN_ACCESS_TOKEN,
+        //instagram_id: "1192172351",
       },
+
     },
     {
       resolve: 'gatsby-transformer-remark',
