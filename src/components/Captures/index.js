@@ -16,7 +16,6 @@ const Captures = () => {
       <Styled.Posts>
           {edges.map((edge) => {
             const post = edge.node
-            console.log(post)
             const title = post.caption ? post.caption.split(`#`)[0] : ``
             const date = new Date(post.timestamp).toLocaleDateString(`en-In`)
 
