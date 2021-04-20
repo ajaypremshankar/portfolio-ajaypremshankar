@@ -16,12 +16,13 @@ const Captures = () => {
       <Styled.Posts>
           {edges.map((edge) => {
             const post = edge.node
+            console.log(post)
             const title = post.caption ? post.caption.split(`#`)[0] : ``
             const date = new Date(post.timestamp).toLocaleDateString(`en-In`)
 
             return (
                 <Styled.Post key={post.id}>
-                  <Link to={`https://www.instagram.com/p/${post.id}/`} target='_blank'>
+                  <Link to={post.permalink} target='_blank'>
                   <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 1 }}>
                     <Styled.Card>
                       <Styled.Image>

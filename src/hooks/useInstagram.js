@@ -8,6 +8,7 @@ const useInstagram = () => {
         node {
           caption
           media_url
+          permalink
           id
           timestamp
           localImage {
