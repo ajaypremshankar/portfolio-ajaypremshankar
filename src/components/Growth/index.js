@@ -42,8 +42,6 @@ const GrowthEnabler = () => {
     }
   `);
 
-  console.log(markdownRemark, allMarkdownRemark)
-
   const sectionTitle = markdownRemark.frontmatter;
   const testimonials = allMarkdownRemark.edges;
 
