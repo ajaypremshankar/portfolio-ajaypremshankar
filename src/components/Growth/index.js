@@ -50,7 +50,7 @@ const GrowthEnabler = () => {
       <Styled.Content>
         <TitleSection title={sectionTitle.title} subtitle={sectionTitle.subtitle} />
 
-      As a growth enabler, I intend to help students and early-stage professionals grow in their career.<br /><br />
+      I intend to help students and early-stage professionals grow in their career.<br /><br />
       If you find yourself asking any one of the following question(s):<br /><br />
         <Styled.ListContent>
           <ul style={{ listStyleType: "square" }}>
@@ -63,8 +63,8 @@ const GrowthEnabler = () => {
             <li>How can I create visibility in the team?</li>
           </ul></Styled.ListContent>
         <br />
-        <Link to='/calendly/'>
-          <Button>Book my calendar</Button>
+        <Link to='/connect-form/'>
+          <Button>Request a connect</Button>
         </Link>
         <br /><br />
         I do NOT charge anything for these sessions. I truly want to help you while learning from your experience.<br />
