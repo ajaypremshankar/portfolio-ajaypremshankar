@@ -78,6 +78,7 @@ Now, if you're holding back because you think there is a hidden charge which I s
           </ul>
         </Styled.ListContent>
         <br /><br /><br /><hr />
+
       </Styled.Content>
       <TitleSection title={'Testimonials'} subtitle={'What people are saying'} center />
       <Styled.GrowthTestimonialSections>
