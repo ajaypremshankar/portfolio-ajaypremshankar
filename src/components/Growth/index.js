@@ -63,8 +63,8 @@ const GrowthEnabler = () => {
             <li>How can I create visibility in the team?</li>
           </ul></Styled.ListContent>
         <br />
-        <Link to='/connect-form/'>
-          <Button>Request a connect</Button>
+        <Link to='/calendly/'>
+          <Button>Book my calendar</Button>
         </Link>
         <br /><br />
         I do NOT charge anything for these sessions. I truly want to help you while learning from your experience.<br />
