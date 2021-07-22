@@ -6,7 +6,7 @@ export const Posts = styled.div`
 `;
 
 export const Post = styled.div`
-  ${tw`w-full sm:w-1/2 p-3`};
+  ${tw`w-full sm:w-1/1 p-3`};
 `;
 
 export const Card = styled.div`
@@ -36,5 +36,9 @@ export const Tags = styled.div`
 `;
 
 export const Tag = styled.span`
-  ${tw`text-xs break-normal	text-indigo-900 border m-0.5 border-blue-700 rounded-full px-2 py-1 mr-2`}
+  ${tw`text-xs break-normal	text-indigo-900 border m-1 border-blue-700 rounded-full p-2 py-1`}
+`;
+
+export const Input = styled.input`
+  ${tw`bg-white text-center focus:outline-none focus:shadow-outline border border-gray-300 rounded-md py-2 px-4 block w-full appearance-none leading-normal mb-3`};
 `;
