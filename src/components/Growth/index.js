@@ -63,7 +63,7 @@ const GrowthEnabler = () => {
             <li>How can I create visibility in the team?</li>
           </ul></Styled.ListContent>
         <br />
-        <Link to='/calendly/'>
+        <Link to='https://topmate.io/ajaypremshankar' target={'_blank'}>
           <Button>Book my calendar</Button>
         </Link>
         <br /><br />

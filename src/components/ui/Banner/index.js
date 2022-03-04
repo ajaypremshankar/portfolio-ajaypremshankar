@@ -18,7 +18,7 @@ const Banner = ({ title, subtitle, content, linkTo, linkText }) => (
       Being in the software development industry for more than 7 years now. I have got the opportunity to learn from some really talented people who were kind enough to teach me. <br /><br />
 Apart from engineering, my passion is to help students and early-stage professionals grow in their career.
       </Styled.Content>
-      <Link to='/calendly/'>
+      <Link to='https://topmate.io/ajaypremshankar' target={'_blank'}>
           <Button>Book my calendar</Button>
         </Link>
 

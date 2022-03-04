@@ -11,9 +11,9 @@ const FormApp: React.FC = () => {
     <Layout>
       <SEO title="Connect with Ajay Prem Shankar, public form" />
       <Container section>
-      <Link to='/calendly/'>
-          <Button>Book my calendar instead</Button>
-      </Link>
+      <Link to='https://topmate.io/ajaypremshankar' target={'_blank'}>
+          <Button>Book my calendar</Button>
+        </Link>
       </Container>
 
     </Layout>
